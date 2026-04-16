@@ -62,19 +62,10 @@
   opacity: 1;
 }
 
-/* 모바일 메뉴 버튼 */
-.mb-btn {
-  display: none;
-}
-/* 모바일 메뉴 */
-.nav-mb {
-  display: none;
-}
-
 /* 헤더 스크롤 시 */
 /* 배경 변경 */
 .header.active {
-  height: 80px;
+  height: 70px;
   box-shadow: 10px 0 15px 0 rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 1);
 }
@@ -92,4 +83,38 @@
 }
 .header.active .gnb > li > a.active > span::after {
   background-color: #222;
+}
+
+/* 모바일 메뉴 버튼 */
+.mb-btn {
+  display: none;
+}
+
+/* 모바일 메뉴*/
+.nav-mb {
+  /* display: none; */
+  position: absolute;
+  top: 70px;
+  left: 100%;
+  width: 100%;
+  /* 100vh - header(70px) */
+  height: calc(100vh - 70px);
+  padding-top: 30px;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav-mb-gnb a {
+  display: flex;
+  align-items: center;
+  padding: 15px 70px 15px 40px;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* 클릭시 */
+.nav-mb.active {
+   left: 0;
+   opacity: 1;
 }

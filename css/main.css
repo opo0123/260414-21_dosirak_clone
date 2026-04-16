@@ -8,6 +8,7 @@
 @import url("about.css");
 @import url("business.css");
 @import url("footer.css");
+@import url("responsive.css");
 
 /* 공통영역 */
 .inner {
@@ -38,4 +39,9 @@ button,
 li,
 caption {
   font-family: "Poppins", "Pretendard", sans-serif;
+}
+
+/* 스크롤 없애기 */
+html.active {
+  overflow: hidden;
 }
