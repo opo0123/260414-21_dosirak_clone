@@ -1,6 +1,6 @@
 .service {
   position: relative;
-  height: 100vh;
+  height: auto;
   /* min-width: 800px; */
   padding: 180px 0 210px;
 }
