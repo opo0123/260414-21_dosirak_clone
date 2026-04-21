@@ -6,6 +6,14 @@ window.addEventListener("load", () => {
   let gotop = document.querySelector(".gotop");
   //   console.log(footerY); // 반응할 때마다 값이 달라짐
 
+  // gotop 기본 설정 (눌렀을 때)
+  gotop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavor: "smooth",
+    });
+  });
+
   // 높이가 95%일 때
   let waypointfooter = new Waypoint({
     element: document.querySelector(".footer"),

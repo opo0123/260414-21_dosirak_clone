@@ -1,0 +1,56 @@
+/* modal */
+.modal-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 120px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #fff;
+}
+/* 로고 */
+.modalLogo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  background: url(../images/main_visual_1.jpg) no-repeat;
+  background-position: right;
+  background-size: 230px 130px;
+  background-color: #fff;
+}
+
+.modalNotice {
+  line-height: 1.7;
+}
+.modalNotice span {
+  font-size: 14px;
+  color: #666;
+}
+.modalNotice strong {
+  color: #f00;
+  background: linear-gradient(to top, rgb(255, 210, 210), 50% , transparent -50%);
+}
+/* modal close */
+.modalClose i {
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}

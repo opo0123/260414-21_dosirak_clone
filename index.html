@@ -103,9 +103,35 @@
     <script src="js/swiper.js"></script>
     <script src="js/header.js"></script>
     <script src="js/business.js"></script>
+    <script src="js/modal.js"></script>
   </head>
   <body>
     <!-- 안내창 -->
+    <!-- modal -->
+    <div class="modal-wrap">
+      <div class="modal-box">
+        <!-- 로고 -->
+        <div class="modalLogo"></div>
+        <p class="modalNotice">
+          해당 사이트는 <strong>스터디용</strong>으로 제작되었으며,<br />
+          리소스는 <strong>원저작자</strong>에게 있음을 알려드립니다.<br />
+        </p>
+
+        <p>
+          260414-상단 스크롤, 비주얼 페이지네이션 추가 예정 <br />
+          260415-상단 스크롤, service영역 css까지 작업 <br />
+          260416-헤더 반응형, 모바일 메뉴 작업 <br />
+          260417-
+          about,business,반응형 작업 <br />260420- business modal 추가, footer,<br>
+          service 반응형/scroll 추가, gotop 작업<br />
+          260421- swiper, modal 마무리
+        </p>
+
+        <!-- modal close -->
+        <div class="modalClose">확인했습니다. <i>× Close</i></div>
+      </div>
+    </div>
+
     <!-- 위로가기 버튼 (footer css, main js)-->
     <button class="gotop">
       <i class="fa-solid fa-arrow-up"></i>
@@ -164,21 +190,81 @@
 
     <!-- 비주얼 -->
     <section class="visual">
+      <!-- swiper -->
       <div class="swiper sw-visual">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="visual-box visual-bg-1"></div>
+            <div class="visual-box visual-bg-1">
+              <div class="inner">
+                <h2>도시락통</h2>
+                <p>도시락으로 다 통한다, 해외데이터는 도시락통</p>
+                <a href="#">
+                  <span>자세히 보기</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="visual-box visual-bg-2"></div>
+            <div class="visual-box visual-bg-2">
+              <div class="inner">
+                <h2>와이파이도시락</h2>
+                <p>여럿이 함께 쓰는 대용량 데이터, 장거리, 장기 할인은 기본</p>
+                <a href="#">
+                  <span>자세히보기</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="visual-box visual-bg-3"></div>
+            <div class="visual-box visual-bg-3">
+              <div class="inner">
+                <h2>도시락유심</h2>
+                <p>믿을 수 있는 현지 통신사의 선불유심, 유심도 도시락으로!</p>
+
+                <a href="#">
+                  <span>자세히보기</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="visual-box visual-bg-4"></div>
+            <div class="visual-box visual-bg-4">
+              <div class="inner">
+                <h2>도시락eSIM</h2>
+                <p>
+                  요금제, 통신사 변경 없이 데이터 충전가능한 아이폰유저를 위한
+                  가장 간편한 로밍
+                </p>
+
+                <a href="#">
+                  <span>자세히보기</span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- swiper-visual 컨트롤 (navigation) -->
+        <div class="sw-visual-control">
+          <button class="sw-visual-prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button class="sw-visual-next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- visual-pagination -->
+      <div class="sw-visual-pg">
+        <ul class="sw-visual-pg-list">
+          <!-- li - js 로 출력 -->
+        </ul>
       </div>
     </section>
 
@@ -190,7 +276,11 @@
         <!-- 박스 영역 -->
         <!-- image -->
         <div class="service-wrap">
-          <div class="service-box-1" data-aos="flip-left" data-aos-duration="1000">
+          <div
+            class="service-box-1"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             <a href="#">
               <!-- bg -->
               <div class="service-bg service-bg1"></div>
@@ -211,7 +301,11 @@
               </div>
             </a>
           </div>
-          <div class="service-box-2" data-aos="flip-right"data-aos-duration="1500">
+          <div
+            class="service-box-2"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <a href="#">
               <!-- bg -->
               <div class="service-bg service-bg2"></div>
@@ -232,7 +326,11 @@
               </div>
             </a>
           </div>
-          <div class="service-box-3" data-aos="flip-right"data-aos-duration="1500">
+          <div
+            class="service-box-3"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+          >
             <a href="#">
               <!-- bg -->
               <div class="service-bg service-bg3"></div>

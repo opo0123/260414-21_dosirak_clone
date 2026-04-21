@@ -62,9 +62,11 @@
   .visual {
     min-height: 800px;
   }
-.visual-bg-1,.visual-bg-2,.visual-bg-3{
-  background-position: left 10% top;
-}
+  .visual-bg-1,
+  .visual-bg-2,
+  .visual-bg-3 {
+    background-position: left 10% top;
+  }
   /* service */
   .service {
     padding: 100px 0;
